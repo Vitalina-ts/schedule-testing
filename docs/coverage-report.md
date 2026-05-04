@@ -17,7 +17,7 @@ Coverage Report
 Частина 2
 
 До
-<img width="1911" height="663" alt="image" src="https://github.com/user-attachments/assets/01de55c3-b43a-44cb-a8d7-38e97afeeedf" />
+<img width="1919" height="604" alt="image" src="https://github.com/user-attachments/assets/6c44eea2-6624-4400-b881-4aa86e96ce97" />
 
 Після 
 
