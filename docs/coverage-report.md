@@ -21,6 +21,6 @@ Coverage Report
 
 Після 
 
-<img width="1919" height="646" alt="image" src="https://github.com/user-attachments/assets/c9493910-5c86-4185-a852-168184f75106" />
+<img width="1915" height="622" alt="image" src="https://github.com/user-attachments/assets/05ec8324-5286-4237-ae4b-97e83d0c9005" />
 
 
