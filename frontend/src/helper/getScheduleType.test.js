@@ -3,10 +3,6 @@ import { FULL, GROUP, TEACHER, DEPARTMENT } from '../constants/scheduleTypes';
 
 describe('getScheduleType', () => {
 
-    // =========================
-    // ✅ БАЗОВІ ВИПАДКИ
-    // =========================
-
     test('returns GROUP when group id exists', () => {
         const values = { group: { id: 1 } };
         expect(getScheduleType(values)).toBe(GROUP);
@@ -21,10 +17,6 @@ describe('getScheduleType', () => {
         const values = { department: { id: 3 } };
         expect(getScheduleType(values)).toBe(DEPARTMENT);
     });
-
-    // =========================
-    // 🔥 ПРІОРИТЕТ (ДУЖЕ ВАЖЛИВО)
-    // =========================
 
     test('priority: GROUP > TEACHER > DEPARTMENT', () => {
         const values = {
@@ -44,10 +36,6 @@ describe('getScheduleType', () => {
 
         expect(getScheduleType(values)).toBe(TEACHER);
     });
-
-    // =========================
-    // 🟡 EDGE CASES
-    // =========================
 
     test('returns FULL when nothing is provided', () => {
         expect(getScheduleType({})).toBe(FULL);
@@ -84,10 +72,6 @@ describe('getScheduleType', () => {
 
         expect(getScheduleType(values)).toBe(FULL);
     });
-
-    // =========================
-    // 🧠 LODASH GET BEHAVIOR
-    // =========================
 
     test('handles nested undefined safely', () => {
         expect(getScheduleType({ group: undefined })).toBe(FULL);
